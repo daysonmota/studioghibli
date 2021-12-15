@@ -1,0 +1,117 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(to top left, rgb(3, 63, 60), rgb(159, 223, 223)) no-repeat;
+}
+
+.container {
+    padding-top: 2.25rem;
+    padding-bottom: 4rem;
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+}
+
+.navegacao_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 180px;
+    width: 300px;
+}
+
+.main_header_titulo {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.main_header_titulo_descricao {
+    margin-top: 1rem;
+    line-height: 25px;
+    font-size: 0.775rem;
+    font-weight: 400px;
+    padding-bottom: 2rem;
+}
+
+.main_header_titulo_descricao {
+    margin-top: 3rem;
+}
+
+.btn_filmes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.btn_assistir {
+    background: url(../img/botao_assistir_agora.png) no-repeat;
+    margin-top: 1rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn_assistir_trailler {
+    background: url(../img/botao_assistir_trailer.svg) no-repeat;
+    margin-top: 1rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn_assistir-alinhamento {
+    margin-top: -2.4rem;
+}
+
+@media screen and (max-width: 375px) {
+    .main_header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 5rem 10rem;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .main_header {
+        padding-left: 7rem;
+    }
+    .btn_assistir {
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (min-height: 768px) {
+    body {
+        height: 90vh;
+    }
+}
